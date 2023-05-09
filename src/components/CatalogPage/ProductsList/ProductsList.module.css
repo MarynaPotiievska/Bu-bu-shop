@@ -1,0 +1,21 @@
+.ul {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;  
+  list-style: none;
+  display: flex;
+  column-gap: 16px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
+	margin-bottom: 50px;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1001px) {
+	margin-bottom: 50px;    
+    column-gap: 30px;
+    row-gap: 26px;
+  }
+}
