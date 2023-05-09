@@ -1,4 +1,4 @@
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import {
   persistStore,
   FLUSH,
@@ -10,21 +10,21 @@ import {
 } from "redux-persist";
 
 import { authReducer } from "./auth/slice";
-
-const middleware = [
-  ...getDefaultMiddleware({
-    serializableCheck: {
-      ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-    },
-  }),
-];
+import { productsReducer } from "./productsSlice";
+import { filtersReducer } from "./filters/slice";
 
 export const store = configureStore({
   reducer: {
     auth: authReducer,
+    products: productsReducer,
+    filters: filtersReducer,
   },
-  middleware,
-  devTools: process.env.NODE_ENV === "development",
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
 });
 
 export const persistor = persistStore(store);
