@@ -1,0 +1,9 @@
+.error {
+  max-width: 328px;
+  margin: 0;
+  padding-top: 15px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: calc(17 / 15);
+  color: #ff0000;
+}
