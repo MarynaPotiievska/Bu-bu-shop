@@ -1,0 +1,194 @@
+.filters-marks {
+  padding-top: 30px;
+
+  @media screen and (min-width: 1001px) {
+    display: none;
+  }
+}
+
+.open-filter-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #d03664;
+  padding: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: calc(17 / 15);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.filters {
+  position: relative;
+  width: 234px;
+  padding: 0 30px;
+  padding-top: 30px;
+  background-color: #ffffff;  
+}
+
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: calc(19 / 17);
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.sub-btn {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: calc(17 / 15);
+  background-color: #ffffff;
+}
+
+.filter {
+  padding: 30px 0;
+  display: block;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.last-filter {
+  border: none;
+}
+
+.filter-head {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: calc(17 / 15);
+}
+
+.above-btn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.price-btn {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #d03664;
+}
+
+.price-btn:hover {
+  background-color: #aa2b51;
+}
+
+.right-arrow {
+  padding: 11px;
+  width: 16px;
+  height: 16px;
+}
+
+.input {
+  width: 44px;
+  padding: 15px;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: calc(17 / 15);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.price-filter-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.submit-btn {
+  padding: 20px 77px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: calc(17 / 15);
+  color: #ffffff;
+  background: #d03664;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #aa2b51;
+}
+
+.submit-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+  width: 100%;
+  padding: 10px;
+
+  @media screen and (min-width: 1001px) {
+    display: none;
+  }
+}
+
+.filters-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 339px;
+  display: flex;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 0;
+  border: none;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.filters-desk {
+  display: none;
+
+  @media screen and (min-width: 1001px) {
+    display: block;
+  }
+}

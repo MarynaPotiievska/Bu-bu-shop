@@ -14,25 +14,25 @@ const ProductsList = ({ products }) => {
   const [stateProducts, setStateProducts] = useState(products);
 
   useEffect(() => {
-    setStateProducts((prevStateProducts) => {
+    setStateProducts((prevState) => {
       switch (sortBy) {
         case "По популярності":
-          return prevStateProducts.sort(
+          return prevState.sort(
             (firstProduct, secondProduct) =>
               secondProduct.rating - firstProduct.rating
           );
         case "Дешевші":
-          return prevStateProducts.sort(
+          return prevState.sort(
             (firstProduct, secondProduct) =>
               firstProduct.price - secondProduct.price
           );
         case "Дорожчі":
-          return prevStateProducts.sort(
+          return prevState.sort(
             (firstProduct, secondProduct) =>
               secondProduct.price - firstProduct.price
           );
         default:
-          return prevStateProducts;
+          return prevState;
       }
     });
   }, [sortBy]);

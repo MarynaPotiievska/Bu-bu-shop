@@ -4,8 +4,9 @@ import products from "data/products.json";
 
 import styles from "./CatalogPage.module.css";
 
-import ProductsList from "./ProductsList/ProductsList";
-import Head from "./Head/Head";
+import Head from "./Head";
+import Filters from "./Filters";
+import ProductsList from "./ProductsList";
 
 const CatalogPage = () => {
   const params = useParams();
@@ -20,7 +21,8 @@ const CatalogPage = () => {
   return (
     <>
       <Head style={styles.container} category={categoryUa} />
-      <section className={styles.container}>
+      <section className={`${styles.container} ${styles.wrapper}`}>
+        <Filters category={category} />
         <ProductsList products={categoryProducts} />
       </section>
     </>

@@ -12,12 +12,12 @@ const LogoLink = ({ className }) => {
     <Link to="/" className={className}>
       <picture>
         <source
-          media="(min-width: 481px)"
+          media="(min-width: 768px)"
           srcSet={`${logoDeskAndTab1x} 1x, ${logoDeskAndTab2x} 2x`}
           type="image/png"
         />
         <source
-          media="(max-width: 480px)"
+          media="(max-width: 767px)"
           srcSet={`${logoMobile1x} 1x, ${logoMobile2x} 2x`}
           type="image/png"
         />
