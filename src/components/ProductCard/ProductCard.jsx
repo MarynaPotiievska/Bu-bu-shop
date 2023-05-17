@@ -28,7 +28,7 @@ const ProductCard = ({ product, path }) => {
             />
             <source
               media="(max-width: 767px)"
-              srcSet={`${product.mainImage?.mob[0]} 1x, ${product.mainImage?.mob[1]} 2x`}
+              srcSet={`${product.mainImage.mob[0]} 1x, ${product.mainImage.mob[1]} 2x`}
               type="image/png"
             />
             <img
