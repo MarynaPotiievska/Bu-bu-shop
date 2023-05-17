@@ -1,1 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path stroke="#D03664" d="m1 16 7.5-7.5M16 1 8.5 8.5m0 0L16 16 1 1"/></svg>
+<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 16L8.5 8.5M16 1L8.5 8.5M8.5 8.5L16 16L1 1" stroke="#D03664"/>
+</svg>

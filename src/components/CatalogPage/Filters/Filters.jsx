@@ -4,9 +4,10 @@ import { useState } from "react";
 import styles from "./Filters.module.css";
 
 import { ReactComponent as FilterIcon } from "assets/icons/filter.svg";
-import { ReactComponent as CloseIcon } from "assets/icons/close.svg";
+import { ReactComponent as CloseIcon } from "assets/icons/filters_close.svg";
 
 import FiltersForms from "./FiltersForms";
+import FilterMarks from "../FilterMarks/FilterMarks";
 
 const Filters = ({ category }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const Filters = ({ category }) => {
           <FilterIcon />
           <span>Фільтр</span>
         </button>
+        <FilterMarks />
       </div>
       {isOpen && (
         <div className={styles["filters-modal"]}>
@@ -35,7 +37,7 @@ const Filters = ({ category }) => {
             onClick={() => setIsOpen(false)}
             className={styles["close-btn"]}
           >
-            <CloseIcon />
+            <CloseIcon width="25" height="25" />
           </button>
         </div>
       )}

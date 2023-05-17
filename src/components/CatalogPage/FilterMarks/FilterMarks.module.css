@@ -1,0 +1,15 @@
+.btn {
+  padding: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  background-color: #ffffff;
+  cursor: pointer;
+}

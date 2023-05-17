@@ -1,5 +1,13 @@
 .filters-marks {
   padding-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width:768px) and (max-width: 1000px) {
+    gap: 20px;
+  }
 
   @media screen and (min-width: 1001px) {
     display: none;
@@ -57,6 +65,7 @@
   font-size: 15px;
   line-height: calc(17 / 15);
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .filter {
