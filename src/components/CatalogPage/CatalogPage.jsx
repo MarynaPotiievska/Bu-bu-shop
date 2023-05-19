@@ -1,8 +1,12 @@
+import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import products from "data/products.json";
-
 import styles from "./CatalogPage.module.css";
+
+import { selectSorting } from "redux/filters/selectors";
+
+import hooks from "hooks";
 
 import Head from "./Head";
 import Filters from "./Filters";
@@ -12,18 +16,46 @@ const CatalogPage = () => {
   const params = useParams();
   const category = params.category;
 
-  const categoryProducts = products.filter(
-    (product) => product.categoryEn === category
-  );
+  const [stateProducts, setStateProducts] = useState([]);
+  const [stateCategory, setStateCategory] = useState(category);
+  const [stateCategoryUa, setStateCategoryUa] = useState("");
+  const [stateProducers, setStateProducers] = useState([]);
 
-  const categoryUa = categoryProducts[0].category;
+  const sortBy = useSelector(selectSorting);
+  const { subcategory, availableOnly, saleOnly, price, producers } =
+    hooks.useSelectFilters();
+
+  useEffect(() => {
+    const { categoryProducts, categoryProducers, filteredByProducers } =
+      hooks.useFilters(
+        category,
+        subcategory,
+        saleOnly,
+        availableOnly,
+        price,
+        producers
+      );
+    const products = hooks.useSort(filteredByProducers, sortBy);
+    setStateCategory(category);
+    setStateCategoryUa(categoryProducts[0].category);
+    setStateProducers(categoryProducers);
+    setStateProducts(products);
+  }, [
+    category,
+    subcategory,
+    saleOnly,
+    availableOnly,
+    price,
+    producers,
+    sortBy,
+  ]);
 
   return (
     <>
-      <Head style={styles.container} category={categoryUa} />
+      <Head style={styles.container} category={stateCategoryUa} />
       <section className={`${styles.container} ${styles.wrapper}`}>
-        <Filters category={category} />
-        <ProductsList products={categoryProducts} />
+        <Filters category={stateCategory} producers={stateProducers} />
+        <ProductsList products={stateProducts} />
       </section>
     </>
   );
