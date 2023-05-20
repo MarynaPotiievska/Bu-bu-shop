@@ -48,7 +48,6 @@ const FiltersForms = ({ category, onClose }) => {
       checked: e.target.checked,
       value: e.target.value,
     };
-    console.log(payload);
     dispatch(setProducers(payload));
   };
 
@@ -81,17 +80,29 @@ const FiltersForms = ({ category, onClose }) => {
           );
         })}
       </ul>
-      <label className={styles.filter}>
+      <label className={`${styles.filter} ${styles.label}`}>
         <input
           type="checkbox"
           name="available"
+          className={styles.checkbox}
           onChange={handleChangeAvailable}
         />
-        <span className={styles.label}>В наявності</span>
+        <div className={styles["checkbox-box"]}>
+          <span className={styles["checkbox-icon"]} />
+        </div>
+        <span>В наявності</span>
       </label>
-      <label className={styles.filter}>
-        <input type="checkbox" name="discount" onChange={handleChangeSale} />
-        <span className={styles.label}>Зі знижкою</span>
+      <label className={`${styles.filter} ${styles.label}`}>
+        <input
+          type="checkbox"
+          name="discount"
+          className={styles.checkbox}
+          onChange={handleChangeSale}
+        />
+        <div className={styles["checkbox-box"]}>
+          <span className={styles["checkbox-icon"]} />
+        </div>
+        <span>Зі знижкою</span>
       </label>
       <Formik
         initialValues={initialValues}
@@ -108,9 +119,17 @@ const FiltersForms = ({ category, onClose }) => {
               </button>
             </div>
             <div className={styles["price-filter-wrapper"]}>
-              <Field type="text" name="minPrice" className={styles.input} />
+              <Field
+                type="text"
+                name="minPrice"
+                className={styles["price-input"]}
+              />
               <span>–</span>
-              <Field type="text" name="maxPrice" className={styles.input} />
+              <Field
+                type="text"
+                name="maxPrice"
+                className={styles["price-input"]}
+              />
               <button type="submit" className={styles["price-btn"]}>
                 <ArrowRightIcon className={styles["right-arrow"]} />
               </button>
@@ -129,14 +148,18 @@ const FiltersForms = ({ category, onClose }) => {
           {producers.map((producer) => {
             return (
               <li key={producer}>
-                <label>
+                <label className={styles.label}>
                   <input
                     type="checkbox"
                     name="producer"
+                    className={styles.checkbox}
                     value={producer}
                     onChange={handleChangeProducers}
                   />
-                  <span className={styles.label}>{producer}</span>
+                  <div className={styles["checkbox-box"]}>
+                    <span className={styles["checkbox-icon"]} />
+                  </div>
+                  <span>{producer}</span>
                 </label>
               </li>
             );

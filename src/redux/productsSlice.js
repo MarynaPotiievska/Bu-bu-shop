@@ -11,14 +11,14 @@ const productsSlice = createSlice({
   name: "products",
   initialState: productsInitialState,
   reducers: {
-    addtoCartProduct: {
+    addToCartProduct: {
       reducer(state, action) {
-        return state.products.cart.push(action.payload);
+        state.cart.push(action.payload);
       },
     },
-    addtoSeenProduct: {
+    addToSeenProduct: {
       reducer(state, action) {
-        return state.products.seen.push(action.payload);
+        state.seen.push(action.payload);
       },
     },
   },
@@ -33,7 +33,7 @@ export const productsReducer = persistReducer(
   persistConfig,
   productsSlice.reducer
 );
-export const { addProduct, deleteProduct } = productsSlice.actions;
+export const { addToCartProduct, addToSeenProduct } = productsSlice.actions;
 
 // Selector
 export const selectCart = (state) => state.products.cart;

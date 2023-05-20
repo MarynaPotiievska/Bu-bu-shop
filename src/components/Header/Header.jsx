@@ -26,9 +26,7 @@ const Header = () => {
           <SearchForm />
           <ShoppingBar
             shopUl={styles["ul-desktop"]}
-            shopLink={styles["shop-link"]}
             shopSearch={[styles["btn"], styles["mobile-only"]]}
-            shopStats={styles["shop-stats"]}
           />
         </div>
         <div

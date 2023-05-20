@@ -5,7 +5,7 @@
   gap: 10px;
   flex-wrap: wrap;
 
-  @media screen and (min-width:768px) and (max-width: 1000px) {
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
     gap: 20px;
   }
 
@@ -34,9 +34,8 @@
 .filters {
   position: relative;
   width: 234px;
-  padding: 0 30px;
   padding-top: 30px;
-  background-color: #ffffff;  
+  background-color: #ffffff;
 }
 
 .title {
@@ -61,6 +60,7 @@
   align-items: center;
   justify-content: flex-start;
   border: none;
+  font-family: inherit;
   font-weight: 300;
   font-size: 15px;
   line-height: calc(17 / 15);
@@ -86,11 +86,38 @@
 }
 
 .label {
-  display: inline-block;
-  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
   font-weight: 300;
   font-size: 15px;
   line-height: calc(17 / 15);
+}
+
+.checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.checkbox-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #585858;
+  border-radius: 2px;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox-box > .checkbox-icon {
+  background-color: #d03664;
 }
 
 .above-btn {
@@ -119,7 +146,7 @@
   height: 16px;
 }
 
-.input {
+.price-input {
   width: 44px;
   padding: 15px;
   border: 1px solid #c7c7c7;

@@ -11,6 +11,7 @@ import hooks from "hooks";
 import Head from "./Head";
 import Filters from "./Filters";
 import ProductsList from "./ProductsList";
+import Pagination from "./Pagination";
 
 const CatalogPage = () => {
   const params = useParams();
@@ -57,6 +58,7 @@ const CatalogPage = () => {
         <Filters category={stateCategory} producers={stateProducers} />
         <ProductsList products={stateProducts} />
       </section>
+      <Pagination style={styles.container} />
     </>
   );
 };
