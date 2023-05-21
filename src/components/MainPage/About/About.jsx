@@ -1,10 +1,24 @@
+import { useState } from "react";
+
 import styles from "./About.module.css";
 
 const About = () => {
+  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
+  const [text, setText] = useState("Докладніше");
+
+  const handleClick = () => {
+    setIsDetailsOpen((prevState) => !prevState);
+    setText((prevState) =>
+      prevState === "Докладніше" ? "Показати менше" : "Докладніше"
+    );
+  };
+
+  const isHidden = isDetailsOpen ? styles.details : null;
+
   return (
     <section>
       <div className={styles.container}>
-        <article className={styles.article}>
+        <article className={`${styles.article} ${isHidden}`}>
           <p>
             Інтернет-магазин дитячих товарів Бу-Бу - зона комфорту малюків і їх
             батьків. Наш асортимент розроблений в діапазоні "від народження до
@@ -26,7 +40,9 @@ const About = () => {
             догляд, автокрісла, дитячий транспорт, іграшки, дитячий одяг.
           </p>
         </article>
-        <button className={styles.btn}>Докладніше</button>
+        <button className={styles.btn} onClick={handleClick}>
+          {text}
+        </button>
       </div>
     </section>
   );
