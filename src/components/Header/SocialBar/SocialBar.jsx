@@ -44,7 +44,7 @@ const SocialBar = ({
 };
 
 SocialBar.propTypes = {
-  socBar: PropTypes.string.isRequired,
+  socBar: PropTypes.string,
   socPhone: PropTypes.string.isRequired,
   socUl: PropTypes.string.isRequired,
   socText: PropTypes.string.isRequired,

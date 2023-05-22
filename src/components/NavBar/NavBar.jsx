@@ -36,11 +36,11 @@ const NavBar = ({ navBar, navUl, navLink, navHidden, navLi }) => {
 };
 
 NavBar.propTypes = {
-  navBar: PropTypes.string.isRequired,
-  navUl: PropTypes.string.isRequired,
-  navLink: PropTypes.string.isRequired,
+  navBar: PropTypes.string,
+  navUl: PropTypes.string,
+  navLink: PropTypes.string,
   navHidden: PropTypes.string,
-  navLi: PropTypes.string.isRequired,
+  navLi: PropTypes.string,
 };
 
 export default NavBar;
