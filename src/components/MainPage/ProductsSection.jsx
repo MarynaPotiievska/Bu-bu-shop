@@ -21,7 +21,11 @@ const ProductsSection = ({
     >
       <ul className={styles.ul}>
         {products.map((product) => (
-          <ProductCard product={product} path={product.id} key={product.id} />
+          <ProductCard
+            product={product}
+            path={`/catalog/${product.categoryEn}/${product.id}`}
+            key={product.id}
+          />
         ))}
       </ul>
     </Section>
