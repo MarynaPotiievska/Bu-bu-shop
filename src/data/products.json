@@ -1,5 +1,6 @@
 [
 	{
+		"id": "umVX4fqfcGp708CYsWhckh3lRSgGSORH",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Коляски 3в1",
@@ -19,6 +20,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "6Vck96JKBa7auJPA41u4VNt49F3DFYuL",
 		"category": "Іграшки",
 		"categoryEn": "toys",
 		"subcategory": "Розвиваючі",
@@ -38,6 +40,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "0iQROFQO3VG5PQguEbTlCZ3u6p1sSUDd",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Посуд",
@@ -57,6 +60,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "IYb3NAljvG2al9R452272RUKwVL16fMG",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Дитячі суміші",
@@ -76,6 +80,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "6I0kyn1U04TW5V5utVA87DjOFiTv9Q6G",
 		"category": "Автокрісла",
 		"categoryEn": "autochairs",
 		"subcategory": "Автолюльки",
@@ -95,6 +100,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "QDSVXcQLwsRnXHouIuCEa9D2QxTY0xhQ",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Прикорм",
@@ -114,6 +120,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "eHEHYmah0xUuhL3oWA5NRR2rBeUPt7Bp",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Коляски для двійні",
@@ -133,6 +140,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "dG0KFDRLjloXsYNdB5WHzJwQQdg00qQA",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Коляски для двійні",
@@ -152,6 +160,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "xIJCP88n6v990jfiB4L8NbYJDOPODDX1",
 		"category": "Іграшки",
 		"categoryEn": "toys",
 		"subcategory": "Конструктори",
@@ -171,6 +180,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "XBM74Fyu36W0fvVCxL24ILsBa9nkemPX",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Посуд",
@@ -190,6 +200,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "kbYZgXcNf4pPWUZ2rLiq1ScAGNO2hV42",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Дитячі суміші",
@@ -209,6 +220,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "idWORuFOkBOEpRsUMxuIuog3gbQ4xun6",
 		"category": "Автокрісла",
 		"categoryEn": "autochairs",
 		"subcategory": "Автокрісла-переноски",
@@ -228,6 +240,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "a9wUzL0QJl2eXIUvAFNXZfhinXKaGm75",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Посуд",
@@ -247,6 +260,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "iJg9TUMDKHSwUMf2ks1ZgfJvbXhc6Npd",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Коляски 3в1",
@@ -256,7 +270,7 @@
 		"price":  25799,
 		"colors": ["сірий", "червоний", "зелений"],
 		"sex": ["хлопчик", "дівчинка"],
-		"available": true,
+		"available": false,
 		"discount": 10,
 		"description1": "Ключові особливості колекції m/type PRO зосереджені на зручність для батьків і комфорт для дітей. Ця модель дозволяє однаково насолоджуватися прогулянками міськими вуличками і лісовими стежками.",
 		"description2": "Легке зняття люльки. Для цього досить і однієї руки. Адже система пам'яті адаптерів буде утримувати кнопки натиснутими, поки люльку не знімуть.",
@@ -266,6 +280,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "BLNwiJMDXvu71ujYZ0zuR2H22SMfxkkN",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Коляски для двійні",
@@ -285,6 +300,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "FjJCJyPZYmnPaM8C5h9gxOwqRYWIkbWF",
 		"category": "Іграшки",
 		"categoryEn": "toys",
 		"subcategory": "Пазли",
@@ -294,7 +310,7 @@
 		"price":  300,
 		"colors": ["сірий", "червоний", "зелений"],
 		"sex": ["хлопчик", "дівчинка"],
-		"available": true,
+		"available": false,
 		"discount": 30,
 		"description1": "Ключові особливості колекції m/type PRO зосереджені на зручність для батьків і комфорт для дітей. Ця модель дозволяє однаково насолоджуватися прогулянками міськими вуличками і лісовими стежками.",
 		"description2": "Легке зняття люльки. Для цього досить і однієї руки. Адже система пам'яті адаптерів буде утримувати кнопки натиснутими, поки люльку не знімуть.",
@@ -304,6 +320,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "wao29LswMsdd9JHZOz3Bp13kI2HYItaO",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Посуд",
@@ -323,6 +340,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "eu2CW13ErVIdd6yFEdXQDd4l1G0LOGa6",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Дитячі суміші",
@@ -342,6 +360,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "jUxyych9aWBV6Rhe2F3EUGMAEsQbLbDw",
 		"category": "Автокрісла",
 		"categoryEn": "autochairs",
 		"subcategory": "Трансформери",
@@ -351,7 +370,7 @@
 		"price":  4300,
 		"colors": ["сірий", "червоний", "зелений"],
 		"sex": ["хлопчик", "дівчинка"],
-		"available": true,
+		"available": false,
 		"discount": 0,
 		"description1": "Ключові особливості колекції m/type PRO зосереджені на зручність для батьків і комфорт для дітей. Ця модель дозволяє однаково насолоджуватися прогулянками міськими вуличками і лісовими стежками.",
 		"description2": "Легке зняття люльки. Для цього досить і однієї руки. Адже система пам'яті адаптерів буде утримувати кнопки натиснутими, поки люльку не знімуть.",
@@ -361,6 +380,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "fd5NmLOA0frDz9jzVhkU6eSuxyLA0Gyq",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Посуд",
@@ -370,7 +390,7 @@
 		"price":  150,
 		"colors": ["сірий", "червоний", "зелений"],
 		"sex": ["хлопчик", "дівчинка"],
-		"available": true,
+		"available": false,
 		"discount": 30,
 		"description1": "Ключові особливості колекції m/type PRO зосереджені на зручність для батьків і комфорт для дітей. Ця модель дозволяє однаково насолоджуватися прогулянками міськими вуличками і лісовими стежками.",
 		"description2": "Легке зняття люльки. Для цього досить і однієї руки. Адже система пам'яті адаптерів буде утримувати кнопки натиснутими, поки люльку не знімуть.",
@@ -380,6 +400,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "S1IKzmDt2mMeqGsAyjcq3xc7WafAA5RU",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Коляски для двійні",
@@ -399,6 +420,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "ecFggioZUXi7DSLPzDcKtMkMeAwSzIYO",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Коляски 3в1",
@@ -418,6 +440,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "CGx64UMerkN8DE55UxZ73iwvSbZ49KNf",
 		"category": "Іграшки",
 		"categoryEn": "toys",
 		"subcategory": "Пазли",
@@ -437,6 +460,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "lZCVpy0uvXFdMsMY83ucJ5jiXMUj8p2A",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Посуд",
@@ -456,6 +480,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "joYmkSxifZGUvA08QBKW0MaOn3hejaGU",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Дитячі суміші",
@@ -475,6 +500,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "lWmq2C1Ck4eryO9onoO6I9HIrL7qe2Hc",
 		"category": "Автокрісла",
 		"categoryEn": "autochairs",
 		"subcategory": "Бустери",
@@ -494,6 +520,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "EnEYHmFlSBSOlyPrD1KH1vsllPXlNRKQ",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Посуд",
@@ -513,6 +540,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "CNsp5HbKPtm9kJ1IU8d7Orm10tSDpHJK",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Аксесуари та комплектуючі",
@@ -532,6 +560,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "ScLR85rUxNA5rcpV1pGlUmiJFPXbC3Dy",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Муфти",
@@ -551,6 +580,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "sTW3kwzswJZPItgS02Uzoyiu7crt36hN",
 		"category": "Іграшки",
 		"categoryEn": "toys",
 		"subcategory": "Конструктори",
@@ -570,6 +600,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "pukzznDvEv07AmIHOv2OuqC0NLdAewbS",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Посуд",
@@ -589,6 +620,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "I9xL96ka77f3tcsQCBdceG6xOLLJ38Pi",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Дитячі суміші",
@@ -608,6 +640,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "uEBggKWVWT9uUiPvmpBBDloRkRBdtb04",
 		"category": "Автокрісла",
 		"categoryEn": "autochairs",
 		"subcategory": "Автокрісла-переноски",
@@ -627,6 +660,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "oN7xnE4K9busVgLe540zs34nvXn57YRy",
 		"category": "Все для годування",
 		"categoryEn": "feeding",
 		"subcategory": "Посуд",
@@ -646,6 +680,7 @@
 		"size": "108.5х60х124.5 см"
 	},
 	{
+		"id": "nfDFx1F8HJcgoEV3oW3tOZICCSeYmMFU",
 		"category": "Дитячі коляски",
 		"categoryEn": "carriages",
 		"subcategory": "Зимові конверти",

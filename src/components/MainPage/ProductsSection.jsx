@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { nanoid } from "nanoid";
 
 import styles from "./MainPage.module.css";
 
@@ -21,18 +20,9 @@ const ProductsSection = ({
       container={container}
     >
       <ul className={styles.ul}>
-        {products.map((product) => {
-          if (!product.id) {
-            product.id = nanoid();
-          }
-          return (
-            <ProductCard
-              product={product}
-              path={`/catalog/${product.category}/${product.id}`}
-              key={product.id}
-            />
-          );
-        })}
+        {products.map((product) => (
+          <ProductCard product={product} path={product.id} key={product.id} />
+        ))}
       </ul>
     </Section>
   );

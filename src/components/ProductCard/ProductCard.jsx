@@ -27,6 +27,8 @@ const ProductCard = ({ product, path }) => {
   const simplePrice =
     product.discount > 0 ? styles["crossed-price"] : styles["simple-price"];
 
+  const available = product.available ? false : true;
+
   const handleBuyClick = () => {
     const index = cart.indexOf(product);
     if (index !== -1) {
@@ -39,7 +41,7 @@ const ProductCard = ({ product, path }) => {
 
   return (
     <li className={styles.li}>
-      <Link to={path} className={styles.link}>
+      <Link to={path} className={styles.link} product={product}>
         <div className={styles.container}>
           <picture>
             <source
@@ -66,11 +68,15 @@ const ProductCard = ({ product, path }) => {
             <p className={simplePrice}>{product.price} грн</p>
             <span className={isDiscountPrice}>{priceWithDiscount} грн</span>
           </div>
+          {!product.available && (
+            <p className={styles["not-available"]}>Немає в наявності</p>
+          )}
         </div>
       </Link>
       <div className={styles["btns-wrapper"]}>
         <button
           type="button"
+          disabled={available}
           className={`${styles.btn} ${styles.buy}`}
           onClick={handleBuyClick}
         >

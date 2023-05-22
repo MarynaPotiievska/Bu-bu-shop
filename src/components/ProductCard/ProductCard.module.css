@@ -130,6 +130,15 @@
   }
 }
 
+.not-available {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: calc(17 / 15);
+  color: #f91111;
+}
+
 .btns-wrapper {
   opacity: 0;
   position: absolute;

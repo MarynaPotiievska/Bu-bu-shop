@@ -5,6 +5,7 @@ import "./App.css";
 const SharedLayout = lazy(() => import("components/SharedLayout/SharedLayout"));
 const Main = lazy(() => import("pages/Main"));
 const Catalog = lazy(() => import("pages/Catalog"));
+const Product = lazy(() => import("pages/Product"));
 const Signin = lazy(() => import("pages/Signin"));
 const Register = lazy(() => import("pages/Register"));
 
@@ -19,7 +20,10 @@ const App = () => {
           {/* route for Catalog */}
           <Route path="/catalog/:category" element={<Catalog />}></Route>
           {/* route for Product Page */}
-          {/* <Route></Route> */}
+          <Route
+            path="/catalog/:category/:productId"
+            element={<Product />}
+          ></Route>
         </Route>
         {/* route for Sign in */}
         <Route path="/signin" element={<Signin />}></Route>
