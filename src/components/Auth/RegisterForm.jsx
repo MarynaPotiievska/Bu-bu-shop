@@ -37,7 +37,9 @@ const registerSchema = yup.object().shape({
 });
 
 const initialValues = {
-  login: "",
+  name: "",
+  phone: "",
+  email: "",
   password: "",
 };
 

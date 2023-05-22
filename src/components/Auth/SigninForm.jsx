@@ -1,9 +1,11 @@
 import styles from "./Auth.module.css";
 
-import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
+
+import { signin } from "redux/auth/operations";
 
 import Error from "components/Auth/ErrorMessage";
 
@@ -33,10 +35,13 @@ const initialValues = {
 };
 
 const SigninForm = () => {
-  const [values, setValues] = useState(initialValues);
+  const dispatch = useDispatch();
 
   const handleSubmit = (values, { resetForm }) => {
-    console.log(values);
+    const { login, password } = values;
+    const field = login.charAt(0) === "+" ? { phone: login } : { email: login };
+    dispatch(signin({ ...field, password }));
+    resetForm();
   };
 
   const isError = (errors, name) => {
@@ -47,7 +52,7 @@ const SigninForm = () => {
     <div>
       <h1 className={styles.title}>Вхід</h1>
       <Formik
-        initialValues={values}
+        initialValues={initialValues}
         validationSchema={signinSchema}
         onSubmit={handleSubmit}
       >

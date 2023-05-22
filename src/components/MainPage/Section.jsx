@@ -30,7 +30,7 @@ Section.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   unvisible: PropTypes.string,
-  container: PropTypes.string.isRequired,
+  container: PropTypes.string,
 };
 
 export default Section;

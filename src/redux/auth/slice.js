@@ -17,7 +17,6 @@ const authSlice = createSlice({
     return builder.addMatcher(
       isAnyOf(...getActions("fulfilled")),
       (state, { payload }) => {
-        console.log(payload);
         state.user = payload;
         state.isLoggedIn = true;
       }

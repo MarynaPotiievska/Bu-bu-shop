@@ -45,12 +45,12 @@ const SocialBar = ({
 
 SocialBar.propTypes = {
   socBar: PropTypes.string,
-  socPhone: PropTypes.string.isRequired,
-  socUl: PropTypes.string.isRequired,
-  socText: PropTypes.string.isRequired,
-  socBtn: PropTypes.string.isRequired,
-  socIcon: PropTypes.string.isRequired,
-  socActive: PropTypes.string.isRequired,
+  socPhone: PropTypes.string,
+  socUl: PropTypes.string,
+  socText: PropTypes.string,
+  socBtn: PropTypes.string,
+  socIcon: PropTypes.string,
+  socActive: PropTypes.string,
 };
 
 export default SocialBar;
