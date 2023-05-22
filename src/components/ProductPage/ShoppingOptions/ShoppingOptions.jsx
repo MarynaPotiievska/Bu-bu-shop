@@ -19,8 +19,7 @@ const ShoppingOptions = () => {
   const dispatch = useDispatch();
   const cart = useSelector(selectCart);
 
-  const params = useParams();
-  const { category, productId } = params;
+  const { category, productId } = useParams();
 
   const product = products.find((item) => item.id === productId);
 
@@ -61,7 +60,7 @@ const ShoppingOptions = () => {
         <Link to="/" className={styles.link}>
           Головна &#62;
         </Link>
-        <Link to={`/catalog/:${category}`} className={styles.link}>
+        <Link to={`/catalog/${category}`} className={styles.link}>
           {product.category} &#62;
         </Link>
       </div>

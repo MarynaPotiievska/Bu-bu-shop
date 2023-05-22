@@ -1,6 +1,9 @@
 import { NavLink, Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import { ReactComponent as UserIcon } from "assets/icons/user.svg";
+
+import { selectIsLoggedIn } from "redux/auth/slice";
 
 import SocialLinks from "components/SocialLinks";
 
@@ -13,6 +16,8 @@ const SocialBar = ({
   socIcon,
   socActive,
 }) => {
+  const isLoggedIn = useSelector(selectIsLoggedIn);
+
   return (
     <div className={socBar}>
       <div className={socBar}>
@@ -31,7 +36,7 @@ const SocialBar = ({
       </div>
       <Link to="/signin" className={socBtn}>
         <UserIcon className={socIcon} />
-        <span className={socText}>Вхід</span>
+        <span className={socText}>{isLoggedIn ? "Кабінет" : "Вхід"}</span>
       </Link>
     </div>
   );

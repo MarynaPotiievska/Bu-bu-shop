@@ -7,9 +7,7 @@ const getActions = (type) => extraActions.map((action) => action[type]);
 
 const initialState = {
   user: { name: null, email: null, phone: null },
-  token: null,
   isLoggedIn: false,
-  isRefreshing: false,
 };
 
 const authSlice = createSlice({
@@ -19,7 +17,8 @@ const authSlice = createSlice({
     return builder.addMatcher(
       isAnyOf(...getActions("fulfilled")),
       (state, { payload }) => {
-        state.user = payload.user;
+        console.log(payload);
+        state.user = payload;
         state.isLoggedIn = true;
       }
     );
@@ -27,3 +26,5 @@ const authSlice = createSlice({
 });
 
 export const authReducer = authSlice.reducer;
+
+export const selectIsLoggedIn = (state) => state.auth.isLoggedIn;
