@@ -7,9 +7,9 @@ import logoMobile2x from "assets/images/logo/logo@2x_m.png";
 import logoDeskAndTab1x from "assets/images/logo/logo@1x_dt.png";
 import logoDeskAndTab2x from "assets/images/logo/logo@2x_dt.png";
 
-const LogoLink = ({ className }) => {
+const LogoLink = () => {
   return (
-    <Link to="/" className={className}>
+    <Link to="/">
       <picture>
         <source
           media="(min-width: 768px)"

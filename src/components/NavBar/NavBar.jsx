@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const NavBar = ({ navBar, navUl, navLink, navHidden, navLi }) => {
@@ -32,6 +33,14 @@ const NavBar = ({ navBar, navUl, navLink, navHidden, navLi }) => {
       </ul>
     </nav>
   );
+};
+
+NavBar.propTypes = {
+  navBar: PropTypes.string.isRequired,
+  navUl: PropTypes.string.isRequired,
+  navLink: PropTypes.string.isRequired,
+  navHidden: PropTypes.string,
+  navLi: PropTypes.string.isRequired,
 };
 
 export default NavBar;

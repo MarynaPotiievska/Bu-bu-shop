@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import { ReactComponent as FbIcon } from "assets/icons/facebook.svg";
@@ -24,6 +25,12 @@ const SocialLinks = (socUl) => {
       </li>
     </ul>
   );
+};
+
+SocialLinks.propTypes = {
+  socUl: PropTypes.exact({
+    style: PropTypes.string.isRequired,
+  }),
 };
 
 export default SocialLinks;

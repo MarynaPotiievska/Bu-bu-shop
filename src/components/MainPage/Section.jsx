@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import styles from "./MainPage.module.css";
@@ -23,6 +24,13 @@ const Section = ({ title, subtitle, unvisible, container, children }) => {
       </div>
     </section>
   );
+};
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  unvisible: PropTypes.string,
+  container: PropTypes.string.isRequired,
 };
 
 export default Section;

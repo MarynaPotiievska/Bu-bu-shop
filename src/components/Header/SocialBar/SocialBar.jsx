@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { NavLink, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -40,6 +41,16 @@ const SocialBar = ({
       </Link>
     </div>
   );
+};
+
+SocialBar.propTypes = {
+  socBar: PropTypes.string.isRequired,
+  socPhone: PropTypes.string.isRequired,
+  socUl: PropTypes.string.isRequired,
+  socText: PropTypes.string.isRequired,
+  socBtn: PropTypes.string.isRequired,
+  socIcon: PropTypes.string.isRequired,
+  socActive: PropTypes.string.isRequired,
 };
 
 export default SocialBar;
