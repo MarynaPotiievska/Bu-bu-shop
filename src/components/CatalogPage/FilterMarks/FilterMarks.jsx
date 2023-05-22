@@ -65,57 +65,69 @@ const FilterMarks = () => {
   }, [min, max, dispatch]);
 
   return (
-    <>
+    <ul>
       {subcutegory !== "" && (
-        <button
-          type="button"
-          onClick={handleSubcategory}
-          className={styles.btn}
-        >
-          <span>{subcutegory}</span>
-          <CloseIcon />
-        </button>
+        <li key="subcutegory">
+          <button
+            type="button"
+            onClick={handleSubcategory}
+            className={styles.btn}
+          >
+            <span>{subcutegory}</span>
+            <CloseIcon />
+          </button>
+        </li>
       )}
       {availableOnly && (
-        <button
-          type="button"
-          onClick={handleAvailableOnly}
-          className={styles.btn}
-        >
-          <span>В наявності</span>
-          <CloseIcon />
-        </button>
+        <li key="availableOnly">
+          <button
+            type="button"
+            onClick={handleAvailableOnly}
+            className={styles.btn}
+          >
+            <span>В наявності</span>
+            <CloseIcon />
+          </button>
+        </li>
       )}
       {saleOnly && (
-        <button type="button" onClick={handleSaleOnly} className={styles.btn}>
-          <span>Зі знижкою</span>
-          <CloseIcon />
-        </button>
+        <li key="saleOnly">
+          <button type="button" onClick={handleSaleOnly} className={styles.btn}>
+            <span>Зі знижкою</span>
+            <CloseIcon />
+          </button>
+        </li>
       )}
       {minPrice > 0 && (
-        <button type="button" onClick={handlePriceMin} className={styles.btn}>
-          <span>Ціна: від {minPrice} грн</span>
-          <CloseIcon />
-        </button>
+        <li key="minPrice">
+          <button type="button" onClick={handlePriceMin} className={styles.btn}>
+            <span>Ціна: від {minPrice} грн</span>
+            <CloseIcon />
+          </button>
+        </li>
       )}
       {maxPrice < 30000 && (
-        <button type="button" onClick={handlePriceMax} className={styles.btn}>
-          <span>Ціна: до {maxPrice} грн</span>
-          <CloseIcon />
-        </button>
+        <li key="maxPrice">
+          <button type="button" onClick={handlePriceMax} className={styles.btn}>
+            <span>Ціна: до {maxPrice} грн</span>
+            <CloseIcon />
+          </button>
+        </li>
       )}
       {producers.length > 0 &&
         producers.map((producer) => (
-          <button
-            type="button"
-            onClick={handleProducers}
-            className={styles.btn}
-          >
-            <span>Виробник: {producer}</span>
-            <CloseIcon />
-          </button>
+          <li key={producer}>
+            <button
+              type="button"
+              onClick={handleProducers}
+              className={styles.btn}
+            >
+              <span>Виробник: {producer}</span>
+              <CloseIcon />
+            </button>
+          </li>
         ))}
-    </>
+    </ul>
   );
 };
 
